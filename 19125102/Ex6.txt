@@ -1,0 +1,19 @@
+import copy
+
+v1 = [1,2,3, {"name": "CS320", "numbers": [99,77,88]}, 4, 5]
+v2 = copy.copy(v1)
+
+print(v1 is v2)
+print(v1[0] is v2[0])
+print(v1[3] is v2[3])
+print(v1[3]['name'] is v2[3]['name'])
+print(v1[3]['numbers'] is v2[3]['numbers'])
+print(v1[3]['numbers'][1] is v2[3]['numbers'][1])
+
+# Print results and explain them
+1. False. Because when we use copy.copy function, it creates a new list object for v2 with references
+to the child objects in v1. Hence, they cannot have the same identity
+2. True. Though v1 and v2 refer to different list objects but actually v1[0] and v2[0] are the integers which are immutable.
+So, even when v1 and v2 refer to different list objects, objects of elements which are integer types
+are still not changed
+3. 4. 5. Because they both refer to shared child objects so in Q3,4,5 it will print out True (it is similar to Q2)

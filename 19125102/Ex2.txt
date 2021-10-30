@@ -1,0 +1,12 @@
+def inc(n):
+    n += 1
+    
+b = 9
+inc(b)
+print(b)
+# Print `b` and explain its result
+"""
+It will print out 9 
+because variable b is immutable (an integer), so actually when we pass b to function inc with parameter n, n will point to the same object with b,
+but when we add 1 to n, b is immutable so it needs to create a new object with value 10 for n the state of variable b is still the same as before  
+"""

@@ -1,0 +1,6 @@
+- Function is a mechanism which maps parameters as input to returns as output. Basically, function is a set of operations which is executed topdown to process input 
+and return output
+
+- Object is a complete formation containing properties and behaviours. Object is similar to person, animal, plant, house, etc. in real life. 
+
+- Variable is something created to store information (it can be integer, string, ...). Variable can be assigned with values many times.

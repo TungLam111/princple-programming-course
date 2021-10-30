@@ -1,0 +1,17 @@
+def assign_list(a, b):
+    a = b
+    
+one = [1, 2, 3]
+two = [4, 5, 6]
+assign_list(one, two)
+print(one)
+print(two)
+
+# Print `one` and `two` then explain the results
+"""
+It will print out 
+[1, 2, 3]
+[4, 5, 6]
+Because when we pass one and two to function assign_list by a and b, a and one refer to the same object, b and two refer to the same object
+when assigning b to a, it means that a,b and two are refering to same object while one is not. So one is not changed
+"""

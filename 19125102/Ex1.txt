@@ -1,0 +1,20 @@
+a = 100
+b = 100
+
+print(id(a) == id(b))
+
+c = 300
+d = 300
+
+print(id(c) == id(d))
+
+# Explain why `id(a) == id(b)` returns True but `id(c) == id(d)` returns False
+"""
+id(a) == id(b) is true
+id(c) == id(d) is false 
+because Python keeps an array of integer objects for all integers between -5 and 256. 
+When you create integers in that range, they will re-refer to the same object. So that is the reason why when b is created, its value lies 
+between -5 and 256, b will point back to the object which a is pointing. 
+But for the second case, 300 is out of range, so when you create d, it refers to other object which is different from c. Even when you simulate 
+the example by creating some variables with same value as c and d, they refer to new objects which are different from c and d
+"""

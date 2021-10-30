@@ -1,0 +1,5 @@
+Because Python's decorators do nothing but make it pretty or beautify the functions.
+Python's decorators does not interfere with the logic or what's happening inside the functions they are decorating
+There are many methods to make it possible, one of them is editting the functions directly. 
+But by doing so, you are messing up with the functions, make the more sophisticated and unreadable. When application becomes larger, 
+many functions might want to use the same decoration, so it's needed to use Python's decorators

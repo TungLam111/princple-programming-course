@@ -1,0 +1,13 @@
+# Write a copy function that returns a copy of a list. Do not use `=` or `copy`
+
+def copy_by_iter(arr):
+    return arr[:]
+    
+list_one = [1, 2, 3]
+list_two = copy_by_iter(list_one)
+
+"""
+Function copy_by_iter simply returns a new list. The slice operation [:] means getting all the values of a list, then copying all of them and put 
+in a new list. New list created is different from original list, it refers to new list object
+If we try printing id of them, we might see that their id are not the same.
+"""

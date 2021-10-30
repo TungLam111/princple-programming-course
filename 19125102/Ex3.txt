@@ -1,0 +1,12 @@
+def add(n):
+    n.append(9)
+    
+simple_list = [1, 2, 4]
+add(simple_list)
+print(simple_list)
+
+# Print `simple_list` and explain its result
+"""
+It prints out [1,2,4,9] because simple_list is an mutable object, so when function add() with parameter simple_list is called,
+simple_list and n will refer to the same object, and when n changes, simple_list changes as well
+"""

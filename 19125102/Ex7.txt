@@ -1,0 +1,20 @@
+import copy
+
+v1 = [1, 2, 3, {'hash1': 887, 'hash2': 123}]
+v2 = copy.deepcopy(v1)
+
+print(v1 == v2)
+print(v1 is v2)
+print(v1[0] is v2[0])
+print(v1[3] == v2[3])
+print(v1[3] is v2[3])
+
+# Print results and explain them
+"""
+When using deep copy, that means we create new list object with reference to the copies of child objects in original list object
+1. True. "==" operation means you compare value with each other. values of v1 and v2 are equal
+2. False. v1 and v2 refer to totally different objects so the object id of them cannot be equal
+3. True. v1[0] and v2[0] are immutable
+4. True. This statement just compares values with each other so they are equal
+5. False. v1[3] and v2[3] are two objects, unlike the case in Exercise 6, so they do not have the same id 
+"""

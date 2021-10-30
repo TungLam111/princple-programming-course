@@ -1,0 +1,2 @@
+static typing : C++, Java, Go
+dynamic typing : JavaScript, Pỵthon, PHP

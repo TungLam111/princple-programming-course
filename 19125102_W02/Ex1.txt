@@ -1,0 +1,24 @@
+There are many differences in Static and Dynamic Typing that we need to consider. 
+Firstly, Variable declaration.
+In dynamic typing, we do not need to specify a datatype for a variable beforing using it while
+static typing states that a variable have to go with a datatype
+For example:
+dynamic : a = 5 (in python)
+static : char[100] str (in C++)
+Sencondly, code interpretation
+Dynamic typing do type checking at runtime as opposed to complied-time
+In the other hands, static typing do type checking at complied-time as opposed to runtime
+
+pros & cons of static typing :
+- pros :
++ Datatypes are comprehensibly declared in code, this makes code straightforward and helps to avoid the vagueness ( for example, parameters in function)
++ Errors (trivial bugs,...) are caused intermediately so it's possible to debug before running code as soon as possiple
+- cons :
++ Inflexibility and Unreadability. When codebase becomes bigger, it's really hard to have a general outlook on what's going on 
+
+pros & cons of dynamic typing :
+- pros :
++ code is neat and tidy, easy to read, dynamic usage when one variable can be used under various values (string, int, etc.) regardless of different datatypes (the signature of dynamic typing)
+- cons :
++ it does not raise error when we are writing the code but at runtime (after the complied-time ends). This actually causes a lot of bugs and misleading if 
+we are not careful (for example: the mismatch in datatype compatibility)
